@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  mnodapp-fe:
+    image: mnodapp-fe-dev
+    container_name: mnodapp-fe-dev
+    build:
+      context: .
+      args:
+        REACT_APP_HTTP_API_URL: http://127.0.0.1:8080/api
+    ports:
+      - "3001:80"

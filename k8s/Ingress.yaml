@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: mnodapp-fe-ingress
+  annotations:
+    kubernetes.io/ingress.class: gce
+    kubernetes.io/ingress.allow-http: "true"
+    kubernetes.io/ingress.global-static-ip-name: mnodapp-fe
+    cert-manager.io/issuer: letsencrypt-mnodapp-fe
+spec:
+  tls:
+    - secretName: mnodapp-fe-ssl
+      hosts:
+          - ${HOST}
+  defaultBackend:
+    service:
+      name: mnodapp-fe-service
+      port:
+        number: 80

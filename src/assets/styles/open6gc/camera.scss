@@ -1,0 +1,126 @@
+.camera-control-modal {
+    .modal-dialog {
+        width: 800px !important; /* New width for default modal */
+    }
+
+    &__active {
+        .modal-dialog {
+            width: 100% !important; /* New width for default modal */
+            margin: 0 !important;
+        }
+
+        .modal-content {
+            height: 100vh !important;
+        }
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+
+        .extra-btn {
+            margin-right: 10px;
+            cursor: pointer;
+            opacity: .2;
+
+            &:hover {
+                opacity: .4;
+            }
+        }
+    }
+
+    .camera-contents {
+        .sub-item {
+            width: 100%;
+            position: relative;
+
+            .transparent-div {
+                position: absolute;
+                top: 0;
+                width: calc(100% - 15px);
+                height: calc(230px - 15px);
+                opacity: 0;
+                background-color: black;
+                z-index: 100;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.3;
+                }
+            }
+
+            .stream-div {
+                width: 100%;
+                height: 230px;
+                z-index: 200;
+            }
+
+            .video-div {
+                position: absolute;
+                top: 0;
+                z-index: 50;
+            }
+
+            .empty-text-div {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 230px;
+                z-index: 60;
+
+                .empty-text {
+                    font-size: 35px;
+                    color: white;
+                    opacity: 0.7;
+                    font-weight: bold;
+                }
+            }
+
+            .label-div {
+                display: flex;
+                margin-top: 10px;
+            }
+        }
+
+    }
+}
+
+.camera-modal {
+    &--tab {
+        &--content {
+            .stream-video {
+                &--video {
+                    max-width: 100%;
+                    width: 100%;
+                    height: 300px;
+                    padding: 0;
+                }
+
+                &--btn {
+                    transition: 150ms;
+                    position: absolute;
+                    top: 270px;
+                    right: 70px;
+                    margin: auto;
+                    height: fit-content;
+                    width: fit-content;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    border-color: transparent;
+                    border-radius: 50%;
+                    padding: 16px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    outline: none;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 1);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.searchbar {
+    display: flex;
+    width: 300px;
+
+    .search-bar {
+        padding-right: 30px;
+    }
+
+    .search-icon {
+        margin-left: -33px;
+
+        .serach-btn {
+            background-color: transparent;
+            font-size: 15px;
+            border: none;
+            color: gray;
+
+            &:hover {
+                color: #168ce1;
+                font-size: 18px;
+            }
+        }
+    }
+}

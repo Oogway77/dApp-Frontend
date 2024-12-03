@@ -1,0 +1,75 @@
+.device-modal {
+    @media screen and (min-width: 1000px) {
+        .modal-dialog {
+            width: 800px !important; /* New width for default modal */
+        }
+    }
+
+    &__header {
+        &__title {
+            font-size: 20px;
+            color: cadetblue;
+            margin: 15px 5px;
+        }
+    }
+
+    &__content {
+        margin: 5px;
+
+        &__border {
+            border: 3px solid #cacaca;
+            border-radius: 3px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .media-container {
+            display: flex;
+            justify-content: center;
+
+            .content {
+                display: flex;
+                justify-content: center; /* Center the content horizontally */
+                align-items: center;
+                flex-direction: column;
+                max-width: 330px;
+                max-height: 330px;
+                width: 330px;
+            }
+
+            .content img,
+            .content video {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .leaflet-container {
+            background-color: #aad3df;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        &__maininfo {
+            &__field {
+                display: flex;
+                margin-bottom: 3px;
+
+                &__title {
+                    font-weight: 700;
+                    width: 150px;
+                }
+            }
+        }
+
+        &__lanhosts {
+            margin-top: 20px;
+            &__title {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

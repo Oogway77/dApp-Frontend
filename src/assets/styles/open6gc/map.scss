@@ -1,0 +1,7 @@
+.coverate-map {
+    @media screen and (min-width: 1000px) {
+        .modal-dialog {
+            width: 800px !important; /* New width for default modal */
+        }
+    }
+}

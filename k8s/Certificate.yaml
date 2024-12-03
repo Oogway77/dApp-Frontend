@@ -1,0 +1,14 @@
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: letsencrypt-mnodapp-fe
+spec:
+  acme:
+    email: devops-${ENV}@bloxtel.com
+    server: https://acme-v02.api.letsencrypt.org/directory
+    privateKeySecretRef:
+      name: letsencrypt-mnodapp-fe
+    solvers:
+    - http01:
+        ingress:
+          name: mnodapp-fe-ingress

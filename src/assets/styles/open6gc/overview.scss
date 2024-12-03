@@ -1,0 +1,178 @@
+
+.overview__header {
+  h4 {
+    display: inline-block;
+  }
+
+  .overview__searchbar {
+    display: inline-block;
+
+    .overview_backBtn {
+      cursor: pointer;
+      margin-right: 20px;
+    }
+
+    .overview__searchpanel {
+      margin-top: 8px;
+      margin-left: 40px;
+      float: right;
+      display: flex;
+
+      &__extra-icon {
+        margin-left: 30px;
+        font-size: 17px;
+        cursor: pointer;
+        margin-top: 5px;
+
+        &:hover {
+          color: #116fb3;
+        }
+      }
+
+      .search_pan {
+        width: 500px;
+        display: flex;
+        margin-bottom: 20px;
+        margin-top: 0px;
+
+        .dropdown-container {
+          width: 300px;
+          z-index: 1000;
+          font-size: 15px;
+          font-weight: 400;
+        }
+  
+        .search-icon {
+          margin-top: 4px;
+          margin-left: -75px;
+          z-index: 2000;
+  
+          .serach-btn {
+            background-color: transparent;
+            font-size: 20px;
+            border: none;
+            color: gray;
+          }
+        }
+      }
+    }
+  }
+
+  .overview__button {
+    float: right;
+    margin-top: 10px;
+
+    &__margin-right {
+      margin-right: 20px;
+    }
+  }
+
+  .last-update__button {
+    float: right;
+    margin-top: 10px;
+    color: black;
+    border-color: black;
+  }
+
+  .last-update__button {
+    float: right;
+    margin-top: 10px;
+    color: black;
+    border-color: black;
+  }
+
+  .refresh__button {
+    cursor: pointer;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+}
+
+.overview__content {
+  padding: 10px 30px 20px 30px !important;
+
+  .action__button {
+    margin-top: 10px;
+    color: black;
+    border-color: black;
+    margin-right: 6px;
+  }
+
+}
+
+.overview__table {
+  .table-checkbox {
+    margin-left: 5px;
+    transform: scale(1.2);
+  }
+
+  & > thead > tr {
+    cursor: auto;
+    font-size: 17px;
+  }
+
+  & > tbody > tr > td {
+    //cursor: pointer;
+    font-size: 20px;
+    padding: 6px;
+    & > i {
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.55);
+    }
+  }
+
+  .btn-default {
+    &:focus {
+      background-color:#1a73e8;
+      opacity: 0.8;
+      color: white;
+      border-color: #404040;
+    }
+  }
+}
+
+.overview__title {
+  margin: 15px 0;
+  color: #116fb3;
+  letter-spacing: 1px;
+  line-height: 17px;
+  font-weight: 300;
+}
+
+.dsims__modal {
+  .error-txt {
+    color: red;
+  }
+}
+
+.dsims__logs {
+  height: 500px;
+  width: calc(100% - 30px);
+  margin: 15px;
+}
+
+.status-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.sactive {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(26, 196, 26);
+  border-radius: 50%;
+  border: none;
+}
+
+.sinactive {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 25, 25);
+  border-radius: 50%;
+  border: none;
+}

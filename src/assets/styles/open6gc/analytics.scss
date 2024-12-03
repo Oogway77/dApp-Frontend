@@ -1,0 +1,146 @@
+.analytics-content {
+    background-color: #f5f6f8;
+}
+
+.filter-content {
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 5px ;
+    padding: 0;
+    box-shadow: 0 0 20px rgba(0,0,0,.08);
+    border: none;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-right: 20px;
+
+
+    &__title {
+        color: #23282d;
+        font-size: 20px;
+    }
+
+    &__buttons {
+        margin-top: 20px;
+
+        .active {
+            background-color: #007bff !important;
+            color: #fff !important;
+        }
+    }
+}
+
+
+.report-content {
+    display: flex;
+
+    @media (max-width: 992px){
+        flex-wrap: wrap;
+    }
+}
+
+.report-card {
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 5px;
+    padding: 0;
+    box-shadow: 0 0 20px rgba(0,0,0,.08);
+    border: none;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 30px 10px;
+    width: 100%;
+
+
+    @media (max-width: 992px){
+        width: 45%;
+    }
+
+    @media (max-width: 768px){
+        width: 100%;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-around;
+
+        &__icon {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        &__context {
+
+            &__count {
+                color: #455a64;
+                font-size: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            &__title {
+                color: #99abb4;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.chart-content {
+    margin-right: 20px;
+}
+
+.chart-card {
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 5px;
+    padding: 0;
+    box-shadow: 0 0 20px rgba(0,0,0,.08);
+    border: none;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 30px 10px;
+    width: 100%;
+    height: 600px;
+}
+
+.filter-btn {
+    background-color: white !important;
+    color: #23282d;
+
+    &:hover {
+        color: #fff !important;
+    }
+}
+
+.sp {
+    width: 60px;
+    height: 60px;
+    clear: both;
+    margin: 120px auto;
+}
+
+.loading {
+    border: 4px rgba(0, 0, 0, 0.25) solid;
+    border-top: 4px black solid;
+    border-radius: 50%;
+    -webkit-animation: spCircRot .6s infinite linear;
+    animation: spCircRot .6s infinite linear;
+}
+
+@-webkit-keyframes spCircRot {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(359deg);
+    }
+  }
+  @keyframes spCircRot {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}

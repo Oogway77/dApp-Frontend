@@ -1,0 +1,7 @@
+.operator-modal {
+    @media screen and (min-width: 1000px) {
+        .modal-dialog {
+            width: 1200px !important; /* New width for default modal */
+        }
+    }
+}
